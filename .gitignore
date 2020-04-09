@@ -101,3 +101,4 @@ ENV/
 *.sqlite3
 .vagrant
 .idea/
+.idea/codeStyles/Project.xml
