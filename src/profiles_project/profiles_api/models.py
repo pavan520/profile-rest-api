@@ -20,7 +20,7 @@ class UserProfileManager(UserManager):
         user.save(using=self.db)
         return user
 
-    def create_super_user(self, name, email, password):
+    def create_superuser(self,email,name,password):
         """Creates and saves new super users with given details."""
         user = self.create_user(email=email, name=name, password=password)
         user.is_superuser = True
@@ -44,7 +44,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         """ USed to get user full name """
         return self.name
 
-    def getShortName(self):
+    def get_short_name(self):
         """ USed to get user short name """
         return self.name
 
