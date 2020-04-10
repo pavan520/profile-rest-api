@@ -102,3 +102,4 @@ ENV/
 .vagrant
 .idea/
 .idea/codeStyles/Project.xml
+.idea/misc.xml
