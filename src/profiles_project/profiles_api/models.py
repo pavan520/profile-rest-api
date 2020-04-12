@@ -20,7 +20,7 @@ class UserProfileManager(UserManager):
         user.save(using=self.db)
         return user
 
-    def create_superuser(self,email,name,password):
+    def create_superuser(self, email, name, password):
         """Creates and saves new super users with given details."""
         user = self.create_user(email=email, name=name, password=password)
         user.is_superuser = True
@@ -51,3 +51,15 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         """Django uses this when need to convert object to string"""
         return self.email
+
+
+class ProfileFeedItem(models.Model):
+    """ Profile status updates """
+    user_profile = models.ForeignKey('UserProfile', on_delete=models.CASCADE)
+    status_text = models.CharField(max_length=255)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """ Return the model as text"""
+        return self.status_text
+
