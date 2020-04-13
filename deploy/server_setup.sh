@@ -5,7 +5,7 @@ set -e
 # TODO: Set to URL of git repo.
 PROJECT_GIT_URL='https://github.com/pavan520/profile-rest-api.git'
 
-PROJECT_BASE_PATH='/Library/Frameworks/Python.framework/Versions/3.8/bin/appn'
+PROJECT_BASE_PATH='/Library/Frameworks/Python.framework/Versions/3.8/bin/app'
 VIRTUALENV_BASE_PATH='/Library/Frameworks/Python.framework/Versions/3.8/bin/virtualenvs'
 
 # Set Ubuntu Language
