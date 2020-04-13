@@ -6,7 +6,7 @@ set -e
 PROJECT_GIT_URL='https://github.com/pavan520/profile-rest-api.git'
 
 PROJECT_BASE_PATH='/Users/satyapavankumarkantamani/apps'
-VIRTUALENV_BASE_PATH='/Users/satyapavankumarkantamani/virtualenvs'
+VIRTUALENV_BASE_PATH='/Library/Frameworks/Python.framework/Versions/3.8/bin/virtualenvs'
 
 # Set Ubuntu Language
 locale-gen en_GB.UTF-8
